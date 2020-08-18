@@ -23,7 +23,7 @@ function Main() {
                 "client_id": process.env.REACT_APP_CLIENT_ID,
                 "grant_type": "authorization_code",
                 "code": data.code,
-                "redirect_uri": process.env.REACT_APP_REDIRECT_URI,
+                "redirect_uri": process.env.REACT_APP_REDIRECT_URI.replace(".", "%2E"),
                 "code_verifier": verifier,
             }
             let res = await axios({
