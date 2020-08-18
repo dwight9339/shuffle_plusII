@@ -1,5 +1,5 @@
 class Shuffles {
-    getUnique(tracks, param) {
+    static getUnique(tracks, param) {
         let uniq = {};
 
         tracks.forEach(track => {
@@ -10,7 +10,7 @@ class Shuffles {
         return Object.keys(uniq);
     };
 
-    mergeArrays(arrays) {
+    static mergeArrays(arrays) {
         let merged = [];
 
         for (let i = 0; i < arrays[0].length; i++) {
@@ -22,7 +22,7 @@ class Shuffles {
         return merged;
     };
 
-    simplifyTracks(tracks) {
+    static simplifyTracks(tracks) {
         let index = 0;
         return tracks.map(track => {
             return {
@@ -34,7 +34,7 @@ class Shuffles {
         });
     };
 
-    uniform(tracks) {
+    static uniform(tracks) {
         if (!tracks) return;
 
         let trax = [...tracks];
@@ -46,7 +46,7 @@ class Shuffles {
         return trax;
     };
 
-    spread(tracks, shuffleParam) {
+    static spread(tracks, shuffleParam) {
         if (!tracks) return;
         
         let trax = this.simplifyTracks(tracks);
@@ -69,7 +69,7 @@ class Shuffles {
         return merged.map(track => tracks[track.index]);
     }
 
-    biased(tracks, shuffleParam, biasOptions) {
+    static biased(tracks, shuffleParam, biasOptions) {
         if (!tracks) return;
 
         let trax = this.simplifyTracks(tracks);
