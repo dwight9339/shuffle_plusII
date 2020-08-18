@@ -3,7 +3,7 @@ A handy playlist shuffling Spotify utility! Provides three main shuffle modes an
 
 ### Shuffle Modes
 ##### Random
-Shuffles tracks in a playlist uniformly randomly. This is the way that many music shuffling used to work but users complained that they didn't like that they could end up listening to several songs by the same artist in a row and wanted a more homogenous mix from their playlist.
+Shuffles tracks in a playlist uniformly randomly. This is the way that many music shuffling algorithms used to work but users complained that they didn't like that they could end up listening to several songs by the same artist in a row and wanted a more homogenous mix from their playlist.
 ##### Spread
 Enter the "spread shuffle". This is the shuffling algorithm now used by many services. It provides random playback of tracks in a playlist but also ensures that tracks by the same artist or from the same album are as spread out as possible; providing a playback experience that is random but not *too* random.
 ##### Biased
