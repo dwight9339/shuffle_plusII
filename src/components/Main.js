@@ -23,7 +23,7 @@ function Main() {
                 "client_id": process.env.REACT_APP_CLIENT_ID,
                 "grant_type": "authorization_code",
                 "code": data.code,
-                "redirect_uri": process.env.REACT_APP_REDIRECT_URI.replace(".", "%2E"),
+                "redirect_uri": process.env.REACT_APP_REDIRECT_URI,
                 "code_verifier": verifier,
             }
             let res = await axios({
@@ -32,7 +32,7 @@ function Main() {
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 },
-                data: encode(params)
+                data: encode(params).replace(/\./g, "%2E")
             }).catch(err => console.error(err));
 
             if (res) {
