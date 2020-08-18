@@ -1,0 +1,272 @@
+/* Top-Level Styles */
+.App {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: white;
+}
+
+.mainWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Header Styles */
+.headerWrapper {
+  background-color: #1db954;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: "Fjalla One", sans-serif;
+  text-shadow: 1px 1px 5px #535353;
+}
+
+.headerText {
+  margin-left: 0.2em;
+}
+
+.plusLogo {
+  margin-left: 0.2em;
+}
+
+/* Column Styles */
+.columnHeader {
+  margin-bottom: 20px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.row {
+  height: 100%;
+}
+
+.col {
+  height: 100%;
+
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #535353;
+  border-radius: 0.25em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 60vh;
+}
+
+li {
+  padding: 3px 0px 0px 15px;
+}
+
+li:hover {
+  background-color: #121212;
+  transition: background-color 0.4s ease;
+}
+
+.underlineEffect {
+  margin-bottom: 4px;
+  width: 0%;
+  border-top: 1px solid white;
+}
+
+li:hover .underlineEffect {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.3em;
+}
+
+select {
+  display: block;
+  width: 50%;
+  margin-bottom: 0.5em;
+  border: 1px solid #212121;
+  background-color: #b3b3b3;
+  border-radius: 0.2em;
+  padding: 0.2em;
+  cursor: pointer;
+}
+
+select:hover {
+  background-color: #535353;
+  color: white;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@keyframes slideOut {
+  from {
+    width: 0%;
+  }
+}
+
+.paramSelect {
+  width: 50%;
+  animation: slideOut 0.3s ease-out;
+}
+
+
+
+@keyframes growOut {
+  from {
+    letter-spacing: -1px;
+    font-size: 0em;
+  }
+}
+
+label {
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  color: #535353;
+  transition: color 0.4s ease, letter-spacing 0.3s ease;
+}
+
+.paramSelectLabel {
+  animation: growOut 0.5s ease-out;
+}
+
+.optionSetContainer:hover label {
+  font-size: 0.8em;
+  color: white;
+  letter-spacing: 3px;
+  transition: color 0.4s ease, letter-spacing 0.5s ease;
+}
+
+.optionsListContainer {
+  width: 50%;
+  margin-top: 15px;
+  max-height: 30vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.weightSelector {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.weightSlider {
+  margin: 0px;
+  border-radius: 5px;
+}
+
+.sliderLabel {
+  font-size: 0.6em;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+
+.loginPromptContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login Prompt Styles */
+.loginPrompt {
+  margin: 0 auto;
+  margin-top: 5em;
+  text-align: center;
+}
+
+.promptText {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.loginButton, button {
+  background-color: #b3b3b3;
+  border-color: #212121;
+  font-size: 1.02em;
+  font-weight: 300;
+  border-radius: 0.4em;
+}
+
+.loginButton {
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 7px;
+}
+
+button:hover, .loginButton:hover {
+  background-color: #535353;
+  color: white;
+  transition: background-color 0.2s ease, color 0.5s ease;
+}
+
+/* Track List Styles */
+.trackName {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.selectedTrack {
+  background-color: #b3b3b3;
+  color: #121212;
+}
+
+.selectedTrack .artistNames {
+  color: #535353;
+}
+
+.selectedTrack:hover {
+  background-color: #b3b3b3;
+}
+
+.placeHolderText {
+  font-size: 1.3em;
+  color: #b3b3b3;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.artistNames {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #b3b3b3;
+}
+
+/* Playlist List Styles */
+.playlistLiContainer, .trackListItemContainer {
+  cursor: pointer;
+}
+
+.playlistLiContainer {
+  color: #b3b3b3;
+}
+
+.playlistLiContainer:hover {
+  color: white;
+  letter-spacing: 2px;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.playlistNameContainer {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.playlistName {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.playlistRefreshButtonContainer {  
+  margin-bottom: 10px;
+}
