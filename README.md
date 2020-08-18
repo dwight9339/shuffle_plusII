@@ -1,5 +1,7 @@
 # Shuffle+
-A handy playlist shuffling Spotify utility! Provides three main shuffle modes and advanced shuffling options.
+A handy Spotify playlist shuffling utility! Provides three main shuffle modes and advanced shuffling options.
+
+*Note: You must have a Spotify Premium subscription to use this service*
 
 ### Shuffle Modes
 ##### Random
