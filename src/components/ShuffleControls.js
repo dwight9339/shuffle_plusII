@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import shuffles from "../utils/shuffles";
+import Shuffles from "../utils/shuffles";
 import BiasList from "./BiasList";
 
 function ShuffleControls({ playlist, tracks, setTracks }) {
@@ -34,13 +34,13 @@ function ShuffleControls({ playlist, tracks, setTracks }) {
         console.log(biasOptions);
         switch (shuffleType) {
             case "random":
-                setTracks(shuffles.uniform(tracks));
+                setTracks(Shuffles.uniform(tracks));
                 break;
             case "spread":
-                setTracks(shuffles.spread(tracks, shuffleParam));
+                setTracks(Shuffles.spread(tracks, shuffleParam));
                 break;
             case "biased":
-                setTracks(shuffles.biased(tracks, shuffleParam, biasOptions));
+                setTracks(Shuffles.biased(tracks, shuffleParam, biasOptions));
                 break;
             default:
                 break;
